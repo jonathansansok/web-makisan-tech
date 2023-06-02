@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: "Raleway";
+  /*     cursor: crosshair; */
+}
+::-webkit-srollbar {
+  width: 10px;
+}
+::-webkit-scrollbar {
+  background-color: #7fff00;
+
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ff1493;
+  border-radius: 8px;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.header-CieloOk {
+  height: 100vh;
+  width: 70vw;
+  font-family: "Raleway";
+}
+.js-logoMakisan {
+  width: 40%;
+  height: 20%;
+  margin: 30px 0 0 30px;
+}
+
+.cielo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 520px;
+  /*     background-image: url("./imagenes/poseidon.png");   /ACA VA EL FONDO   */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Roboto, Arial, sans-serif;
+}
+.cielo ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 30px;
+  padding-top: 35px;
+  height: 100px;
+}
+
+.cielo ul li {
+  color: white;
+  list-style: none;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.cielo ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  position: relative;
+
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.cielo ul li a::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e54912;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s; /*  ease-in-out */
+}
+
+.cielo ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.cielo-servicios {
+  text-decoration: none;
+  color: green;
+  transition: all 0.7s;
+  text-underline-offset: 40%;
+}
+
+.offcanvas-start {
+  width: 70vw;
+  /*   margin-top: 16vh; */
+}
+
+.titulo-de-desplegable {
+  color: silver;
+  padding: 40px 0px 0px 0px;
+  font-size: 4.6rem;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  border-bottom: 3px solid #e54912;
+  padding-bottom: 3px;
+}
+.textoYfoto {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.texto-de-desplegable {
+  color: #4a4a4a;
+  padding: 40px 0px 0px 30px;
+  font-size: 2rem;
+  width: 600px;
+}
+.fotoDelTexto {
+  width: 400px;
+  padding: 40px 0px 0px 20px;
+}
+
+.offcanvas-header .btn-close {
+  margin: -40px 40px 0px 0px;
+}
+
+.orangeText {
+  color: #e54912;
+}
