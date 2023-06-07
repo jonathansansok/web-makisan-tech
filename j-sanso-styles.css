@@ -23,9 +23,12 @@ body {
   background-color: black;
   overflow-x: hidden;
 }
+.video-intro{
+  height: auto;
+}
 
 .header-CieloOk {
-  height: 100vh;
+  height: auto;
   width: 70vw;
   font-family: "Raleway";
 }
@@ -39,7 +42,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 520px;
+  height: auto;
   /*     background-image: url("./imagenes/poseidon.png");   /ACA VA EL FONDO   */
   background-position: center;
   background-repeat: no-repeat;
@@ -114,12 +117,18 @@ body {
   border-bottom: 3px solid #e54912;
   padding-bottom: 3px;
 }
+
+
 .textoYfoto {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding-top: 50px;
+}
+#offcanvas1{
+  height: 1000px;
 }
 
 .texto-de-desplegable {
@@ -139,4 +148,11 @@ body {
 
 .orangeText {
   color: #e54912;
+}
+
+/* EMPIEZAN QUERIES */
+@media (max-width: 1000px) {
+  .cieloLista{
+    display: none ;
+  }
 }
