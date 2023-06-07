@@ -31,6 +31,7 @@ body {
   height: auto;
   width: 70vw;
   font-family: "Raleway";
+  min-height: 100vh;
 }
 .js-logoMakisan {
   width: 40%;
@@ -150,9 +151,25 @@ body {
   color: #e54912;
 }
 
+@media (min-width: 1000px) {
+  .ocultoSiEsMayorDe1000px{
+    display: show;
+  }
+
+}
+
+
 /* EMPIEZAN QUERIES */
 @media (max-width: 1000px) {
-  .cieloLista{
-    display: none ;
+  .header-CieloOk {
+    height: auto;
+
   }
+  .cieloLista{
+    display: none !important ;
+  }
+  .ocultoSiEsMayorDe1000px{
+    display: none;
+  }
+
 }
