@@ -151,15 +151,14 @@ body {
   color: #e54912;
 }
 
+/* EMPIEZAN QUERIES */
 @media (min-width: 1000px) {
   .ocultoSiEsMayorDe1000px{
-    display: show;
+    display: none;
   }
 
 }
 
-
-/* EMPIEZAN QUERIES */
 @media (max-width: 1000px) {
   .header-CieloOk {
     height: auto;
@@ -169,7 +168,6 @@ body {
     display: none !important ;
   }
   .ocultoSiEsMayorDe1000px{
-    display: none;
+    display: show;
   }
-
 }
