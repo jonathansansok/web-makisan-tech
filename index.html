@@ -1,323 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="logo-head.ico" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Makinsan Tech</title>
-    <script type="module" crossorigin src="/assets/index-44b5bae5.js"></script>
-    <link rel="stylesheet" href="/assets/index-48a8825f.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="j-sanso-styles.css" />
-  </head>
-  <body>
-      <leadclick-widget
-        integrations="1"
-        fburl="https://www.m.me/"
-        igurl="https://www.linkedin.com/company/makisan-tech/"
-        waurl="https://wa.me/5491169123268"
-        cta="Quiero mas información"
-        fontcolor="white"
-        bgcolor="#25D366"
-        instructions="Quiero mas información"
-        orientation="right"
-        visible_integrations="WhatsApp"
-        ispremium="true"
-      >
-      </leadclick-widget>
-      <header class="header-CieloOk">
-        <div class="video-intro">
-          <div class="position-relative">
-            <div class="textoVideo position-absolute text-center">
-              <div class="cielo">
-                <img
-                  class="js-logoMakisan"
-                  src="logosinfondoacortado-removebg-preview-blanco.png"
-                  alt="logo"
-                />
-                <ul class="cieloLista show escondo-header">
-                  <li>
-                    <a
-                      class="cielo-servicios"
-                      type="button"
-                      data-bs-toggle="offcanvas"
-                      data-bs-target="#offcanvas1"
-                      aria-controls="offcanvas"
-                      >MISIÓN</a
-                    >
-                    <div
-                      class="offcanvas offcanvas-start"
-                      data-scroll="true"
-                      tabindex="-1"
-                      id="offcanvas1"
-                      arial-labelledby="offcanvasLabel"
-                    >
-                      <div class="offcanvas-header" data-scroll="true">
-                        <h5 class="titulo-de-desplegable offcanvas-title">
-                          NUESTRA MISION ES...
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close text-reset"
-                          data-bs-dismiss="offcanvas"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="off-canvas-body textoYfoto">
-                        <div>
-                          <p class="texto-de-desplegable">
-                            Crear y desarrollar
-                            <strong class="orangeText">tecnologías</strong>
-                            necesarias tanto para la
-                            <strong class="orangeText">facilidad</strong> de
-                            nuestros
-                            <strong class="orangeText">clientes</strong> como
-                            para la sociedad, a través de soluciones
-                            <strong class="orangeText">innovadoras</strong> y
-                            <strong class="orangeText">eficientes</strong>.
-                          </p>
-                        </div>
-                        <img class="fotoDelTexto" src="foto-ilustr.jpg" />
-                      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Makinsan Tech</title>
+  <script type="module" crossorigin src="/assets/index-44b5bae5.js"></script>
+  <link rel="stylesheet" href="/assets/index-48a8825f.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="j-sanso-styles.css" />
+  <link rel="stylesheet" href="eduStyle.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+</head>
+
+<body>
+  <div id="app">
+    <leadclick-widget integrations="1" fburl="https://www.m.me/" igurl="https://www.linkedin.com/company/makisan-tech/"
+      waurl="https://wa.me/5491169123268" cta="Quiero mas información" fontcolor="white" bgcolor="#25D366"
+      instructions="Quiero mas información" orientation="right" visible_integrations="WhatsApp" ispremium="true">
+    </leadclick-widget>
+    <header class="header-CieloOk">
+      <div class="video-intro">
+        <div class="position-relative">
+          <div class="textoVideo position-absolute text-center">
+            <div class="cielo">
+              <img class="js-logoMakisan" src="logosinfondoacortado-removebg-preview-blanco.png" alt="logo" />
+              <ul class="cieloLista show">
+                <li>
+                  <a class="cielo-servicios" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas1"
+                    aria-controls="offcanvas">MISIÓN</a>
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1"
+                    arial-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="titulo-de-desplegable offcanvas-title">
+                        NUESTRA MISION ES...
+                      </h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                     </div>
-                  </li>
-                  <li>
-                    <a
-                      class="cielo-servicios"
-                      type="button"
-                      data-bs-toggle="offcanvas"
-                      data-bs-target="#offcanvas2"
-                      aria-controls="offcanvas"
-                      >VISION</a
-                    >
-                    <div
-                      class="offcanvas offcanvas-start"
-                      tabindex="-1"
-                      id="offcanvas2"
-                      arial-labelledby="offcanvasLabel"
-                    >
-                      <div class="offcanvas-header">
-                        <h5 class="titulo-de-desplegable offcanvas-title">
-                          NUESTRA VISIÓN ES...
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close text-reset"
-                          data-bs-dismiss="offcanvas"
-                          aria-label="Close"
-                        ></button>
+                    <div class="off-canvas-body textoYfoto">
+                      <div>
+                        <p class="texto-de-desplegable">
+                          Crear y desarrollar
+                          <strong class="orangeText">tecnologías</strong>
+                          necesarias tanto para la
+                          <strong class="orangeText">facilidad</strong> de
+                          nuestros
+                          <strong class="orangeText">clientes</strong> como
+                          para la sociedad, a través de soluciones
+                          <strong class="orangeText">innovadoras</strong> y
+                          <strong class="orangeText">eficientes</strong>.
+                        </p>
                       </div>
-                      <div class="off-canvas-body textoYfoto">
-                        <div>
-                          <p class="texto-de-desplegable">
-                            Nuestra proyección es ser reconocidos como líderes
-                            locales en el desarrollo de software. Buscando ser
-                            una empresa referente, con un equipo altamente
-                            capacitado y motivado que se dedique a ofrecer
-                            soluciones informáticas de la más alta calidad.
-                          </p>
-                        </div>
-                        <img class="fotoDelTexto" src="logo.jpeg" />
-                      </div>
+                      <img class="fotoDelTexto" src="foto-ilustr.jpg" />
                     </div>
-                  </li>
-                  <li>
-                    <a
-                      class="cielo-servicios"
-                      type="button"
-                      data-bs-toggle="offcanvas"
-                      data-bs-target="#offcanvas3"
-                      aria-controls="offcanvas"
-                      href="reco-virtual.html"
-                      target="_blank"
-                      >OBJETIVOS</a
-                    >
-                    <div
-                      class="offcanvas offcanvas-start"
-                      tabindex="-1"
-                      id="offcanvas3"
-                      arial-labelledby="offcanvasLabel"
-                    >
-                      <div class="offcanvas-header">
-                        <h5 class="titulo-de-desplegable offcanvas-title">
-                          NUESTROS OBJETIVOS SON...
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close text-reset"
-                          data-bs-dismiss="offcanvas"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="off-canvas-body textoYfoto">
-                        <div>
-                          <p class="texto-de-desplegable">
-                            Crear y desarrollar
-                            <strong class="orangeText">tecnologías</strong>
-                            necesarias tanto para la
-                            <strong class="orangeText">facilidad</strong> de
-                            nuestros
-                            <strong class="orangeText">clientes</strong> como
-                            para la sociedad, a través de soluciones
-                            <strong class="orangeText">innovadoras</strong> y
-                            <strong class="orangeText">eficientes</strong>.
-                          </p>
-                        </div>
-                        <img class="fotoDelTexto" src="foto-ilustr.jpg" />
-                      </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="cielo-servicios" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas2"
+                    aria-controls="offcanvas">VISION</a>
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas2"
+                    arial-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="titulo-de-desplegable offcanvas-title">
+                        NUESTRA VISIÓN ES...
+                      </h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                     </div>
-                  </li>
-                  <li>
-                    <a
-                      class="cielo-servicios"
-                      type="button"
-                      data-bs-toggle="offcanvas"
-                      data-bs-target="#offcanvas4"
-                      aria-controls="offcanvas"
-                      href="reco-virtual.html"
-                      target="_blank"
-                      >VALORES</a
-                    >
-                    <div
-                      class="offcanvas offcanvas-start"
-                      tabindex="-1"
-                      id="offcanvas4"
-                      arial-labelledby="offcanvasLabel"
-                    >
-                      <div class="offcanvas-header">
-                        <h5 class="titulo-de-desplegable offcanvas-title">
-                          NUESTROS VALORES SON...
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close text-reset"
-                          data-bs-dismiss="offcanvas"
-                          aria-label="Close"
-                        ></button>
+                    <div class="off-canvas-body textoYfoto">
+                      <div>
+                        <p class="texto-de-desplegable">
+                          Nuestra proyección es ser reconocidos como líderes
+                          locales en el desarrollo de software. Buscando ser
+                          una empresa referente, con un equipo altamente
+                          capacitado y motivado que se dedique a ofrecer
+                          soluciones informáticas de la más alta calidad.
+                        </p>
                       </div>
-                      <div class="off-canvas-body textoYfoto">
-                        <div>
-                          <p class="texto-de-desplegable">
-                            Crear y desarrollar
-                            <strong class="orangeText">tecnologías</strong>
-                            necesarias tanto para la
-                            <strong class="orangeText">facilidad</strong> de
-                            nuestros
-                            <strong class="orangeText">clientes</strong> como
-                            para la sociedad, a través de soluciones
-                            <strong class="orangeText">innovadoras</strong> y
-                            <strong class="orangeText">eficientes</strong>.
-                          </p>
-                        </div>
-                        <img class="fotoDelTexto" src="foto-ilustr.jpg" />
-                      </div>
+                      <img class="fotoDelTexto" src="logo.jpeg" />
                     </div>
-                  </li>
-                </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="cielo-servicios" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas3"
+                    aria-controls="offcanvas" href="reco-virtual.html" target="_blank">OBJETIVOS</a>
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas3"
+                    arial-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="titulo-de-desplegable offcanvas-title">
+                        NUESTROS OBJETIVOS SON...
+                      </h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="off-canvas-body textoYfoto">
+                      <div>
+                        <p class="texto-de-desplegable">
+                          Crear y desarrollar
+                          <strong class="orangeText">tecnologías</strong>
+                          necesarias tanto para la
+                          <strong class="orangeText">facilidad</strong> de
+                          nuestros
+                          <strong class="orangeText">clientes</strong> como
+                          para la sociedad, a través de soluciones
+                          <strong class="orangeText">innovadoras</strong> y
+                          <strong class="orangeText">eficientes</strong>.
+                        </p>
+                      </div>
+                      <img class="fotoDelTexto" src="foto-ilustr.jpg" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="cielo-servicios" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas4"
+                    aria-controls="offcanvas" href="reco-virtual.html" target="_blank">VALORES</a>
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas4"
+                    arial-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="titulo-de-desplegable offcanvas-title">
+                        NUESTROS VALORES SON...
+                      </h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="off-canvas-body textoYfoto">
+                      <div>
+                        <p class="texto-de-desplegable">
+                          Crear y desarrollar
+                          <strong class="orangeText">tecnologías</strong>
+                          necesarias tanto para la
+                          <strong class="orangeText">facilidad</strong> de
+                          nuestros
+                          <strong class="orangeText">clientes</strong> como
+                          para la sociedad, a través de soluciones
+                          <strong class="orangeText">innovadoras</strong> y
+                          <strong class="orangeText">eficientes</strong>.
+                        </p>
+                      </div>
+                      <img class="fotoDelTexto" src="foto-ilustr.jpg" />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Inicio Contenedor Central -->
+            <div class="headline">
+              <div class="title-container">
+                <p class="additional-text">Somos</p>
+              </div>
+              <!-- Inicio Animacion Central-->
+              <div class="container-headline">
+                <div class="main-headline">
+                  <h1>
+                    <b>
+                      <span class="words-wrapper"></span>
+                      <span class="typed-cursor">|</span>
+                    </b>
+                  </h1>
+                </div>
+              </div>
+              <!-- Fin Animacion Central-->
+              <div class="description-text-container">
+                <p class="description-text"><b>Conoce nuestras unidades de negocio</b>.</p>
+              </div>
+              <div class="container-button">
+                <a href="Link 1" target="_blank" class="btn btn-solid" title="Boton 1">
+                  <span class="btn-caption">Boton 1</span>
+                </a>
+                <a href="Link 2" target="_blank" class="btn btn-solid" title="Boton 2">
+                  <span class="btn-caption">Boton 2</span>
+                </a>
+                <a href="Link 3" target="_blank" class="btn btn-solid" title="Boton 3">
+                  <span class="btn-caption">Boton 3</span>
+                </a>
+                <a href="Link 4" target="_blank" class="btn btn-solid" title="Boton 4">
+                  <span class="btn-caption">Boton 4</span>
+                </a>
               </div>
             </div>
+            <!-- Fin Contenedor Central -->
           </div>
         </div>
-      </header>
-
-      <!-- EMPIEZA RESPONSVE SECTION -->
-    <main class="ocultoSiEsMayorDe1000px">
-      <h5 class="titulo-de-desplegable offcanvas-title">
-        NUESTRA MISION ES...
-      </h5>
-      <div class="off-canvas-body textoYfoto">
-        <div>
-          <p class="texto-de-desplegable">
-            Crear y desarrollar
-            <strong class="orangeText">tecnologías</strong>
-            necesarias tanto para la
-            <strong class="orangeText">facilidad</strong> de
-            nuestros
-            <strong class="orangeText">clientes</strong> como
-            para la sociedad, a través de soluciones
-            <strong class="orangeText">innovadoras</strong> y
-            <strong class="orangeText">eficientes</strong>.
-          </p>
-        </div>
-        <img class="fotoDelTexto" src="foto-ilustr.jpg" />
       </div>
-      <!--  -->
-      <h5 class="titulo-de-desplegable offcanvas-title">
-        NUESTRA VISIÓN ES...
-      </h5>
-      <div>
-        <p class="texto-de-desplegable">
-          Nuestra proyección es ser reconocidos como líderes
-          locales en el desarrollo de software. Buscando ser
-          una empresa referente, con un equipo altamente
-          capacitado y motivado que se dedique a ofrecer
-          soluciones informáticas de la más alta calidad.
-        </p>
-      </div>
-      <img class="fotoDelTexto" src="logo.jpeg" />
-    </div>
+  </div>
+  </header>
+  </div>
+  <script src="script.js"></script>
+  <script src="js/eduJS.js"></script>
+  <script type="module"
+    src="https://cdn.jsdelivr.net/npm/@leadsales/leadclick@1.11.1/dist/leadclick/leadclick.esm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-            <!--  -->
-            <h5 class="titulo-de-desplegable offcanvas-title">
-              NUESTROS OBJETIVOS SON...
-            </h5>
-            <div class="off-canvas-body textoYfoto">
-              <div>
-                <p class="texto-de-desplegable">
-                  Crear y desarrollar
-                  <strong class="orangeText">tecnologías</strong>
-                  necesarias tanto para la
-                  <strong class="orangeText">facilidad</strong> de
-                  nuestros
-                  <strong class="orangeText">clientes</strong> como
-                  para la sociedad, a través de soluciones
-                  <strong class="orangeText">innovadoras</strong> y
-                  <strong class="orangeText">eficientes</strong>.
-                </p>
-              </div>
-              <img class="fotoDelTexto" src="foto-ilustr.jpg" />
-            </div>
+</body>
 
-
-                  <!--  -->
-                  <h5 class="titulo-de-desplegable offcanvas-title">
-                    NUESTROS VALORES SON...
-                  </h5>
-                  <div>
-                    <p class="texto-de-desplegable">
-                      Crear y desarrollar
-                      <strong class="orangeText">tecnologías</strong>
-                      necesarias tanto para la
-                      <strong class="orangeText">facilidad</strong> de
-                      nuestros
-                      <strong class="orangeText">clientes</strong> como
-                      para la sociedad, a través de soluciones
-                      <strong class="orangeText">innovadoras</strong> y
-                      <strong class="orangeText">eficientes</strong>.
-                    </p>
-                  </div>
-                  <img class="fotoDelTexto" src="foto-ilustr.jpg" />
-                </div>
-
-
-                        <!--  -->
-
-      
-    </main>
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@leadsales/
-leadclick@1.11.1/dist/leadclick/leadclick.esm.js"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
