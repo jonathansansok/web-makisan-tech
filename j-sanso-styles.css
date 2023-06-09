@@ -10,12 +10,12 @@
   width: 10px;
 }
 ::-webkit-scrollbar {
-  background-color: #7fff00;
+  background-color: silver;
 
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #ff1493;
+  background-color: #e54912;
   border-radius: 8px;
 }
 
@@ -111,7 +111,7 @@ body {
 .titulo-de-desplegable {
   color: silver;
   padding: 40px 0px 0px 0px;
-  font-size: 4.6rem;
+  font-size: 3.5rem;
   display: inline-block;
   position: relative;
   text-decoration: none;
@@ -123,10 +123,15 @@ body {
 .textoYfoto {
   display: flex;
   flex-direction: row;
-  justify-content: start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: start;
   flex-wrap: wrap;
   padding-top: 50px;
+  min-height: auto;
+  max-height: auto;
+overflow: scroll;
+overflow-x: hidden;
+
 }
 #offcanvas1{
   height: 1000px;
@@ -134,7 +139,7 @@ body {
 
 .texto-de-desplegable {
   color: #4a4a4a;
-  padding: 40px 0px 0px 30px;
+  padding: 30px 0px 0px 10px;
   font-size: 2rem;
   width: 600px;
 }
@@ -152,14 +157,14 @@ body {
 }
 
 /* EMPIEZAN QUERIES */
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ocultoSiEsMayorDe1000px{
     display: none;
   }
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .header-CieloOk {
     height: auto;
 
@@ -167,7 +172,13 @@ body {
   .cieloLista{
     display: none !important ;
   }
+/*   .texto-de-desplegable {
+    font-size: 2rem;
+
+  } */
   .ocultoSiEsMayorDe1000px{
     display: show;
+    background-color: #fbfbfa;
   }
+
 }
