@@ -152,14 +152,14 @@ body {
 }
 
 /* EMPIEZAN QUERIES */
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ocultoSiEsMayorDe1000px{
     display: none;
   }
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .header-CieloOk {
     height: auto;
 
