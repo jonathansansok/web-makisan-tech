@@ -27,7 +27,7 @@ body {
   height: auto;
 }
 #particles-js {
-	height: 100vh; 
+	height: 150vh; 
 	width: 70vw;
     position: fixed;
     z-index: -999;
@@ -35,7 +35,10 @@ body {
 
 .header-CieloOk {
   height: auto;
-  width: 70vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   font-family: "Raleway";
   min-height: 100vh;
   position: relative;
