@@ -80,10 +80,10 @@ document.getElementById("formulario").addEventListener("submit", function (event
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Obtén el contenedor de las reseñas
+    //Contenedor de las reseñas
     var contenedorResenas = document.getElementById("resenas-lista");
 
-    // Reseñas de ejemplos
+    //Reseñas de ejemplos
     var reseñasEjemplo = [
         {
             nombre: "Luis García",
