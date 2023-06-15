@@ -61,7 +61,7 @@
 /* /////////////////////////////////////////////////////// */
 
 .container-headline {
-    margin-right: 247px;
+    margin-left: -650px;
 }
 
 .main-headline {
@@ -111,7 +111,7 @@
 
 @media (min-width: 993px) and (max-width: 1200px) {
     .container-headline {
-        margin-right: 225px;
+        margin-left: -200px;
     }
 
     .words-wrapper,
@@ -122,19 +122,18 @@
 
 @media (min-width: 769px) and (max-width: 992px) {
     .container-headline {
-        margin-right: 214px;
+        margin-left: -133px;
     }
 
     .words-wrapper,
     .typed-cursor {
-        font-size: 42px;
+        font-size: 40px;
     }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
-
     .container-headline {
-        margin-right: 233px;
+        margin-left: -225px;
     }
 
     .words-wrapper,
@@ -144,13 +143,13 @@
 }
 
 @media (max-width: 600px) {
-    .main-headline {
-        font-size: 30px;
+    .container-headline {
+        margin-left: -325px;
     }
 
     .words-wrapper,
     .typed-cursor {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
@@ -189,7 +188,9 @@
 
 /* //////////////////////////////////////////////// */
 
-.container-button {
+/* BOTONES */
+
+/* .container-button {
     text-align: center;
 }
 
@@ -285,5 +286,299 @@
         padding: 8px 16px;
         font-size: 14px;
         max-width: 15%;
+    }
+} */
+
+/* //////////////////////////////////////////////// */
+
+/* PROJECTS SECTION */
+
+#projects {
+    max-width: 1100px;
+    padding: 100px 0;
+    padding-bottom: 10px;
+    padding-top: 80px;
+    margin: auto;
+}
+
+.project {
+    background-color: black;
+    border-radius: 4px;
+}
+
+#projects .title-section {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+
+}
+
+#projects .row {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    max-height: 1500px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#projects .row .project {
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#projects .row .project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+#projects .row .project:hover img {
+    filter: grayscale(0.7);
+    filter: blur(2px);
+}
+
+#projects .row .project .info {
+    position: absolute;
+    left: 0;
+    background-color: rgba(49, 49, 49, 0.95);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+}
+
+#projects .row .project .info .links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+#projects .row .project .info .links {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    font-weight: bold;
+}
+
+#projects .row .project .info h4 {
+    font-size: 20px;
+}
+
+#projects .row .project .info p {
+    font-size: 12px;
+}
+
+#projects .row .project:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+    #projects {
+        padding: 50px 0;
+    }
+
+    #projects .row {
+        display: block;
+    }
+
+    #projects .row .project {
+        margin: 10px auto;
+    }
+
+    #projects .title-section {
+        text-align: left;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #projects {
+        margin: 0px 4px 0px 4px;
+    }
+
+    #projects .title-section {
+        text-align: left;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+}
+
+/*/////////////////////////////////////////////////////////*/
+
+.contenedor-resena {
+    width: 50%;
+    margin: 50px auto;
+    background: #acacac;
+    border: 2px solid #696969;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#resenas-container {
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#formulario {
+    text-align: left;
+}
+
+button.btn-primary {
+    border: 2px solid #696969;
+    background-color: #333333;
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+button.btn-primary:hover {
+    background-color: #747474;
+    border: 2px solid #333333;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .contenedor-resena {
+        margin-top: 100px;
+        width: 40%;
+        font-size: 14px;
+    }
+
+    button.btn-primary {
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .contenedor-resena {
+        width: 80%;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .contenedor-resena {
+        width: 80%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor-resena {
+        width: 80%;
+        font-size: 12px;
+    }
+}
+
+
+/*///////////////////////////////////////////////////////*/
+
+#resenas-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.reseña {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.reseña .comentario {
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.reseña .contenido {
+    display: flex;
+    align-items: center;
+}
+
+.reseña .contenido img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    margin-right: 10px;
+}
+
+.reseña .contenido .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.reseña .contenido .info .nombre {
+    font-weight: bold;
+}
+
+.reseña .contenido .info .profesion {
+    margin-top: 5px;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .reseña {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    #resenas-container.contenedor-resena {
+        width: 80%;
+    }
+
+    .reseña {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    #resenas-container.contenedor-resena {
+        width: 80%;
+    }
+
+    .reseña {
+        width: 100%;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #resenas-container.contenedor-resena {
+        width: 80%;
+    }
+
+    .reseña {
+        width: 100%;
+        font-size: 10px;
     }
 }
