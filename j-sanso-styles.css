@@ -10,12 +10,12 @@
   width: 10px;
 }
 ::-webkit-scrollbar {
-  background-color: #7fff00;
+  background-color: silver;
 
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #ff1493;
+  background-color: #e54912;
   border-radius: 8px;
 }
 
@@ -23,8 +23,14 @@ body {
   background-color: black;
   overflow-x: hidden;
 }
-.video-intro{
+.video-intro {
   height: auto;
+}
+#particles-js {
+	height: 100vh; 
+	width: 70vw;
+    position: fixed;
+    z-index: -999;
 }
 
 .header-CieloOk {
@@ -32,6 +38,8 @@ body {
   width: 70vw;
   font-family: "Raleway";
   min-height: 100vh;
+  position: relative;
+  z-index: 99;
 }
 .js-logoMakisan {
   width: 40%;
@@ -111,7 +119,7 @@ body {
 .titulo-de-desplegable {
   color: silver;
   padding: 40px 0px 0px 0px;
-  font-size: 4.6rem;
+  font-size: 3.5rem;
   display: inline-block;
   position: relative;
   text-decoration: none;
@@ -119,22 +127,25 @@ body {
   padding-bottom: 3px;
 }
 
-
 .textoYfoto {
   display: flex;
   flex-direction: row;
-  justify-content: start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: start;
   flex-wrap: wrap;
   padding-top: 50px;
+  min-height: auto;
+  max-height: auto;
+  overflow: scroll;
+  overflow-x: hidden;
 }
-#offcanvas1{
+#offcanvas1 {
   height: 1000px;
 }
 
 .texto-de-desplegable {
   color: #4a4a4a;
-  padding: 40px 0px 0px 30px;
+  padding: 30px 0px 0px 10px;
   font-size: 2rem;
   width: 600px;
 }
@@ -153,21 +164,56 @@ body {
 
 /* EMPIEZAN QUERIES */
 @media (min-width: 1024px) {
-  .ocultoSiEsMayorDe1000px{
+  
+  .ocultoSiEsMayorDe1000px {
     display: none;
   }
-
 }
 
 @media (max-width: 1024px) {
-  .header-CieloOk {
-    height: auto;
+  #particles-js {
+    height: 100vh; 
+
+      position: static;
+      width: 100vw;
 
   }
-  .cieloLista{
+  
+  .header-CieloOk {
+    height: auto;
+  }
+  
+  .cieloLista {
     display: none !important ;
   }
-  .ocultoSiEsMayorDe1000px{
+  /*   .texto-de-desplegable {
+    font-size: 2rem;
+
+  } */
+  .ocultoSiEsMayorDe1000px {
     display: show;
+    background-color: #fbfbfa;
   }
+  .titulo-de-desplegable {
+    margin-left: 40px;
+  }
+  .textoYfoto{
+    overflow: auto;
+    padding-top: 10px;
+  }
+  
+}
+
+@media (max-width: 650px) {
+.titulo-de-desplegable{
+  font-size: 2rem;}
+  .texto-de-desplegable {
+    font-size: 1rem;
+    padding-left: 0px;
+    width: 350px;
+
+  } 
+
+
+
 }
