@@ -1,12 +1,12 @@
 window.addEventListener("load", function () {
     const words = [
         "Comprometidos",
-        /*"Innovadores",
+        "Innovadores",
         "Creativos",
         "Responsables",
         "Flexibles",
         "Apasionados",
-        "Confiables"*/
+        "Confiables"
     ];
 
     const options = {
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ];
 
-    // Crear y agregar las reseñas al contenedor
+    //Agregar las reseñas al contenedor
     reseñasEjemplo.forEach(function (resena) {
         var nuevaResena = document.createElement("li");
         nuevaResena.classList.add("reseña");
