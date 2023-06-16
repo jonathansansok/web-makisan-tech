@@ -41,7 +41,7 @@
       ispremium="true"
     >
     </leadclick-widget>
-
+    <div id="app">
     <header class="header-CieloOk">
       <div class="video-intro" id="particles-js">
         <div class="position-relative">
@@ -525,103 +525,105 @@
           </div>
         </div>
       </div>
-      <div class="sidebar">
-        <div class="logoSidebar">
-          <img src="logo.jpeg" alt="" />
+
+    </header>
+
+    <div class="sidebar">
+      <div class="logoSidebar">
+        <img src="logo.jpeg" alt="" />
+      </div>
+      <div id="info-sidebar">
+        <p>
+          Crear y desarrollar tecnologías necesarias tanto para la facilidad
+          de nuestros clientes como para la sociedad, a través de soluciones
+          innovadoras y eficientes.
+        </p>
+        <p>
+          <span>Nuestra Vision:</span> Nuestra proyección es ser reconocidos
+          como líderes locales en el desarrollo de software. Buscando ser una
+          empresa referente, con un equipo altamente capacitado y motivado que
+          se dedique a ofrecer soluciones informáticas de la más alta calidad.
+        </p>
+        <div class="boton-contacto">
+          <button
+            type="button"
+            class="btn btn-outline-light font-weight-bold btn-lg mt-4"
+            id="boton-contacto"
+          >
+            Contacto Rapido c:
+          </button>
         </div>
-        <div id="info-sidebar">
-          <p>
-            Crear y desarrollar tecnologías necesarias tanto para la facilidad
-            de nuestros clientes como para la sociedad, a través de soluciones
-            innovadoras y eficientes.
-          </p>
-          <p>
-            <span>Nuestra Vision:</span> Nuestra proyección es ser reconocidos
-            como líderes locales en el desarrollo de software. Buscando ser una
-            empresa referente, con un equipo altamente capacitado y motivado que
-            se dedique a ofrecer soluciones informáticas de la más alta calidad.
-          </p>
-          <div class="boton-contacto">
-            <button
-              type="button"
-              class="btn btn-outline-light font-weight-bold btn-lg mt-4"
-              id="boton-contacto"
-            >
-              Contacto Rapido c:
-            </button>
-          </div>
-        </div>
-        <div id="form-sidebar">
-          <form>
-            <div class="mb-3 row">
-              <!-- <label for="staticEmail" class="col-sm-2 col-form-label"
-              >Email</label
-            > -->
-              <div class="col-sm-10 mt-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="staticEmail"
-                  placeholder="Nombre Completo"
-                  style="width: 300px; margin-left: 40px; border-radius: 10px"
-                />
-              </div>
-            </div>
-            <div class="mb-3 row">
-              <!-- <label for="inputPassword" class="col-sm-2 col-form-label"
-              >Password</label
-            > -->
-              <div class="col-sm-10 mt-2">
-                <input
-                  style="width: 300px; margin-left: 40px; border-radius: 10px"
-                  placeholder="Email"
-                  type="email"
-                  class="form-control"
-                  id="inputPassword"
-                />
-              </div>
-            </div>
-            <div class="col-sm-10 mt-2" id="asunto">
+      </div>
+      <div id="form-sidebar">
+        <form>
+          <div class="mb-3 row">
+            <!-- <label for="staticEmail" class="col-sm-2 col-form-label"
+            >Email</label
+          > -->
+            <div class="col-sm-10 mt-4">
               <input
                 type="text"
                 class="form-control"
                 id="staticEmail"
-                placeholder="Asunto"
+                placeholder="Nombre Completo"
                 style="width: 300px; margin-left: 40px; border-radius: 10px"
               />
             </div>
-            <div class="mensaje">
-              <label for="">
-                <textarea
-                  placeholder="..."
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="6"
-                  class="mt-4"
-                ></textarea>
-              </label>
-            </div>
-          </form>
-          <div class="form-buttons">
-            <button
-              class="btn btn-primary mt-4 ml-3"
-              style="margin-right: 20px; margin-bottom: 10px"
-            >
-              Enviar
-            </button>
-            <button
-              class="btn btn-secondary mt-4"
-              style="margin-bottom: 10px"
-              id="boton-volver"
-            >
-              Volver
-            </button>
           </div>
+          <div class="mb-3 row">
+            <!-- <label for="inputPassword" class="col-sm-2 col-form-label"
+            >Password</label
+          > -->
+            <div class="col-sm-10 mt-2">
+              <input
+                style="width: 300px; margin-left: 40px; border-radius: 10px"
+                placeholder="Email"
+                type="email"
+                class="form-control"
+                id="inputPassword"
+              />
+            </div>
+          </div>
+          <div class="col-sm-10 mt-2" id="asunto">
+            <input
+              type="text"
+              class="form-control"
+              id="staticEmail"
+              placeholder="Asunto"
+              style="width: 300px; margin-left: 40px; border-radius: 10px"
+            />
+          </div>
+          <div class="mensaje">
+            <label for="">
+              <textarea
+                placeholder="..."
+                name=""
+                id=""
+                cols="30"
+                rows="6"
+                class="mt-4"
+              ></textarea>
+            </label>
+          </div>
+        </form>
+        <div class="form-buttons">
+          <button
+            class="btn btn-primary mt-4 ml-3"
+            style="margin-right: 20px; margin-bottom: 10px"
+          >
+            Enviar
+          </button>
+          <button
+            class="btn btn-secondary mt-4"
+            style="margin-bottom: 10px"
+            id="boton-volver"
+          >
+            Volver
+          </button>
         </div>
       </div>
-    </header>
-
+    </div>
+  </div>
     <!-- EMPIEZA RESPONSVE SECTION -->
     <main class="ocultoSiEsMayorDe1000px">
       <h5 class="titulo-de-desplegable offcanvas-title">
@@ -707,6 +709,7 @@
         <img class="fotoDelTexto" src="foto-ilustr.jpg" />
       </div>
     </main>
+
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/@leadsales/
