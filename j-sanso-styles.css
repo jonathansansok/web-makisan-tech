@@ -21,14 +21,14 @@
 
 body {
   background-color: black;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 
 #particles-js {
-	height: 100vh; 
+	height: auto; 
 	width: 70vw;
-    position: fixed;
+/*     position: fixed; */
     z-index: -999;
 }
 
