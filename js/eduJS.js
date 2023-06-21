@@ -1,12 +1,12 @@
 window.addEventListener("load", function () {
     const words = [
         "Comprometidos",
-/*         "Innovadores",
+        "Innovadores",
         "Creativos",
         "Responsables",
         "Flexibles",
         "Apasionados",
-        "Confiables" */
+        "Confiables"
     ];
 
     const options = {
@@ -27,8 +27,8 @@ window.addEventListener("load", function () {
         }
     };
 
-    const typed = new Typed(".words-wrapper", options);
-    const wrapperElement = document.querySelector(".words-wrapper");
+    const typed = new Typed(".typed-letra", options);
+    const wrapperElement = document.querySelector(".animacion-headline");
     const wordsElement = wrapperElement.querySelector(".typed-strings");
     gsap.set(wordsElement.children, { opacity: 0 });
     gsap.fromTo(
@@ -38,53 +38,18 @@ window.addEventListener("load", function () {
     );
 });
 
-/* //////////////////////////////////////////////// */
-
-document.getElementById("formulario").addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    var nombre = document.getElementById("nombre").value;
-    var profesion = document.getElementById("profesion").value;
-    var comentario = document.getElementById("comentario").value;
-    var imagen = document.getElementById("imagen").files[0];
-
-    var reseña = document.createElement("li");
-    reseña.classList.add("reseña");
-
-    var contenido = `
-    <div class="comentario">"${comentario}"</div>
-    <div class="contenido">
-        <img src="" alt="Imagen de perfil" class="imagen-perfil">
-        <div class="info">
-        <div class="nombre">${nombre}</div>
-        <div class="profesion">${profesion}</div>
-        </div>
-    </div>
-    `;
-
-    reseña.innerHTML = contenido;
-
-    document.getElementById("resenas-lista").appendChild(reseña);
-
-    var reader = new FileReader();
-    reader.onload = function () {
-        var imagenPerfil = reseña.querySelector(".imagen-perfil");
-        imagenPerfil.src = reader.result;
-    };
-    reader.readAsDataURL(imagen);
-
-    document.getElementById("nombre").value = "";
-    document.getElementById("profesion").value = "";
-    document.getElementById("comentario").value = "";
-    document.getElementById("imagen").value = "";
-});
+/* /////////////////////////////////////////////////////// */
 
 document.addEventListener("DOMContentLoaded", function () {
-    //Contenedor de las reseñas
-    var contenedorResenas = document.getElementById("resenas-lista");
+    var contenedoresResenas = document.querySelectorAll(".resenas-lista");
 
-    //Reseñas de ejemplos
     var reseñasEjemplo = [
+        {
+            nombre: "María Fernández",
+            profesion: "Diseñadora UX",
+            comentario: "Me impresiona la calidad de los sistemas desarrollados por esta empresa. Son expertos en su campo.",
+            imagen: "https://i.pinimg.com/originals/4c/53/b1/4c53b11a0df622c22739f7a1e19460be.jpg"
+        },
         {
             nombre: "Luis García",
             profesion: "Ingeniero de Software",
@@ -92,15 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
             imagen: "https://dipierro-fotografo.com/wp-content/uploads/2020/04/fotografo-retrato-corporativo-madrid-las-rozas.jpg"
         },
         {
-            nombre: "María Fernández",
-            profesion: "Diseñadora UX",
-            comentario: "Trabajar con esta empresa ha sido una experiencia enriquecedora. El enfoque centrado en el usuario se refleja en cada producto.",
-            imagen: "https://i.pinimg.com/originals/4c/53/b1/4c53b11a0df622c22739f7a1e19460be.jpg"
-        },
-        {
             nombre: "Carlos Sánchez",
             profesion: "Ingeniero de Sistemas",
-            comentario: "Me impresiona la calidad y robustez de los sistemas desarrollados por esta empresa. Son expertos en su campo.",
+            comentario: "Trabajar con esta empresa ha sido una experiencia enriquecedora. El enfoque en el usuario se refleja en cada producto.",
             imagen: "https://img.freepik.com/foto-gratis/retrato-sonriente-joven-encantador-camiseta-gris-pie-contra-fondo-liso_23-2148213406.jpg"
         },
         {
@@ -111,24 +70,89 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ];
 
-    //Agregar las reseñas al contenedor
-    reseñasEjemplo.forEach(function (resena) {
-        var nuevaResena = document.createElement("li");
-        nuevaResena.classList.add("reseña");
-
-        var contenidoResena = `
-        <div class="comentario">"${resena.comentario}"</div>
-        <div class="contenido">
-            <img src="${resena.imagen}" alt="Imagen de perfil" class="imagen-perfil">
-            <div class="info">
-            <div class="nombre">${resena.nombre}</div>
-            <div class="profesion">${resena.profesion}</div>
+    contenedoresResenas.forEach(function (contenedor) {
+        reseñasEjemplo.forEach(function (resena) {
+            var nuevaResena = document.createElement("li");
+            nuevaResena.classList.add("resena");
+            var contenidoResena = `
+            <div class="comentario">"${resena.comentario}"</div>
+            <div class="contenido">
+                <img src="${resena.imagen}" alt="Imagen de perfil" class="imagen">
+                <div class="info">
+                    <div class="nombre">${resena.nombre}</div>
+                    <div class="profesion">${resena.profesion}</div>
+                </div>
             </div>
-        </div>
         `;
 
-        nuevaResena.innerHTML = contenidoResena;
-        contenedorResenas.appendChild(nuevaResena);
+            nuevaResena.innerHTML = contenidoResena;
+            contenedor.appendChild(nuevaResena);
+        });
     });
 });
 
+/* /////////////////////////////////////////////////////// */
+
+document.getElementById("formulario").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    var nombre = document.getElementById("nombre").value;
+    var profesion = document.getElementById("profesion").value;
+    var comentario = document.getElementById("comentario").value;
+    var imagen = document.getElementById("imagen").files[0];
+
+    if (nombre === "" || profesion === "" || comentario === "") {
+        alert("Por favor, complete todos los campos");
+        return;
+    }
+
+    if (!imagen) {
+        var nombreTemporal = nombre;
+        var profesionTemporal = profesion;
+        var comentarioTemporal = comentario;
+
+        alert("Por favor, adjunte una imagen");
+
+        document.getElementById("nombre").value = nombreTemporal;
+        document.getElementById("profesion").value = profesionTemporal;
+        document.getElementById("comentario").value = comentarioTemporal;      
+        return;
+    }
+
+    var nuevaResena = document.createElement("li");
+    nuevaResena.classList.add("resena");
+
+    var contenidoResena = `
+        <div class="comentario">${comentario}</div>
+        <div class="contenido">
+            <img src="" alt="Imagen de perfil" class="imagen-perfil">
+            <div class="info">
+                <div class="nombre">${nombre}</div>
+                <div class="profesion">${profesion}</div>
+            </div>
+        </div>
+    `;
+
+    nuevaResena.innerHTML = contenidoResena;
+
+    var contenedorResenas = document.querySelectorAll(".resenas-lista");
+    contenedorResenas.forEach(function (contenedor) {
+        var nuevaResenaClonada = nuevaResena.cloneNode(true);
+        contenedor.appendChild(nuevaResenaClonada);
+
+        var reader = new FileReader();
+        reader.onload = function () {
+            var imagenPerfil = nuevaResenaClonada.querySelector(".imagen-perfil");
+            imagenPerfil.src = reader.result;
+        };
+
+        reader.readAsDataURL(imagen);
+    });
+
+    nuevaResena.classList.add("review-sent");
+
+    document.getElementById("nombre").value = "";
+    document.getElementById("profesion").value = "";
+    document.getElementById("comentario").value = "";
+    document.getElementById("imagen").value = "";
+});

@@ -3,83 +3,82 @@
     flex-direction: row;
   }
 
-
-.logoSidebar {
+  .logoSidebar {
     margin-top: 30px;
   }
-  
-  .logoSidebar img{
+
+  .logoSidebar img {
     border-radius: 20px;
     width: 120px;
     display: block;
     margin: auto;
   }
-  
+
   .sidebar {
     /* background-color: rgb(238, 255, 255); */
     background-color: #ddebf5;
-/* background-image: linear-gradient(135deg, #ddebf5 0%, #010112 100%); */
-background-color: #b3bbbf;
-/* background-image: linear-gradient(135deg, #b3bbbf 0%, #010112 100%); */
-background-color: #454748;
-background-image: linear-gradient(135deg, #454748 0%, #888888 100%);
-
-
+    /* background-image: linear-gradient(135deg, #ddebf5 0%, #010112 100%); */
+    background-color: #b3bbbf;
+    /* background-image: linear-gradient(135deg, #b3bbbf 0%, #010112 100%); */
+    background-color: #454748;
+    background-image: linear-gradient(135deg, #454748 0%, #888888 100%);
     width: 30vw;
     /* margin-top: 35px; */
     margin-left: 50px;
   }
-  
+
   #info-sidebar {
     font-weight: 500;
     color: rgb(252, 252, 252);
     margin: 40px;
     margin-top: 35px;
-   font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
-  
+
   .boton-contacto {
     margin-top: 20px;
     text-align: center;
   }
+
   .boton-contacto button {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
   }
-  
+
   #info-sidebar span {
     font-weight: bold;
     color: #ef6534;
   }
-  
+
   #form-sidebar {
     display: none;
   }
-  
+
   #form-sidebar {
     margin: 0 auto;
     text-align: center;
     border-radius: 10px;
     /* width: 500px; */
   }
-  
+
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  #asunto{ 
+  #asunto {
     margin-left: 27px;
   }
+
   form input {
     border-radius: 40px;
     height: 40px;
   }
 
 
-  
-  .mensaje textarea{
+
+  .mensaje textarea {
     border-radius: 5px;
     border: 1px solid rgb(197, 197, 197);
     padding: 10px;
@@ -89,49 +88,54 @@ background-image: linear-gradient(135deg, #454748 0%, #888888 100%);
 
   @media screen and (max-width:1024px) {
     #app {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
+
     .sidebar {
-        background-color: rgb(212, 252, 252);
-        font-weight:bold ;
-        margin: 0;
-        width: 100vw;
+      background-color: rgb(212, 252, 252);
+      font-weight: bold;
+      margin: 0;
+      width: 100vw;
     }
+
     form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+
     form textarea {
-        margin-left: 10px;
-        height: 140px;
-        width: 200px;
-        border-radius: 40px;
-        padding: 10px;
-        border-radius: 15px;
+      margin-left: 10px;
+      height: 140px;
+      width: 200px;
+      border-radius: 40px;
+      padding: 10px;
+      border-radius: 15px;
     }
 
     #asunto {
-        margin-left: 1px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      margin-left: 1px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .logoSidebar img{
-        margin: 50px;
-        width: 100px;
-      }
-      #info-sidebar span {
-        font-size: 18px;
-        font-weight: bold;
-        color: #ef6534;
-      }
 
-      .form-buttons {
-        margin-top: 2px;
-        margin-left: 47px;
-      }
+    .logoSidebar img {
+      margin: 50px;
+      width: 100px;
+    }
+
+    #info-sidebar span {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ef6534;
+    }
+
+    .form-buttons {
+      margin-top: 2px;
+      margin-left: 47px;
+    }
   }
