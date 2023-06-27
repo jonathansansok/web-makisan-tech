@@ -180,14 +180,14 @@ ul.cieloLista.show.escondo-header li a[data-bs-target="#offcanvas7"] {
 }
 
 ul.cieloLista.show.escondo-header li a.btn-central.btn-solid {
-    color: #000000;
+    color: white;
     background-color: #c0c0c0;
     transition: background-color 0.3s ease;
 }
 
 ul.cieloLista.show.escondo-header li a.btn-central.btn-solid:hover {
-    background-color: #FF0000;
-    color: #920000;
+    background-color: #ef6534;
+    color: #ef6534;
 }
 
 ul.cieloLista.show.escondo-header li a.btn-central.btn-solid::after {
@@ -362,7 +362,7 @@ ul.cieloLista.show.escondo-header li a.btn-central.btn-solid::after {
 
 .resena .contenido img {
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid #ef6534;
     width: 100px;
     height: 100px;
     object-fit: cover;
