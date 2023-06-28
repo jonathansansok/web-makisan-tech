@@ -1,141 +1,194 @@
+#app {
+  display: flex;
+  flex-direction: row;
+}
+
+.personas-sidebar {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.persona1 {
+  margin-top: 40px;
+}
+
+.persona1 img {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.persona2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.persona2 img {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.logoSidebar img {
+  border-radius: 20px;
+  width: 120px;
+  display: block;
+  margin: auto;
+}
+
+.sidebar {
+  background-color: #f5f4f2;
+  background-image: url(./assets/pattern-color-1.svg);
+  background-position: top left;
+  background-size: 52px 30px;
+  width: 30vw;
+  /* margin-top: 35px; */
+  margin-left: 50px;
+}
+
+#info-sidebar {
+  font-weight: 500;
+  color: #252525;
+  margin: 40px;
+  margin-top: 35px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.boton-contacto {
+  text-align: center;
+}
+.boton-contacto button {
+  background-color: #ef6534;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.button-custom {
+  border: none;
+  border-radius: 5px;
+}
+
+#info-sidebar span {
+  font-weight: bold;
+  color: #ef6534;
+}
+
+#form-sidebar {
+  display: none;
+}
+
+#form-sidebar {
+  margin-right: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  /* width: 500px; */
+}
+
+form {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  border-radius: 40px;
+  height: 40px;
+}
+
+.form-buttons {
+  margin-left: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-buttons button {
+  background-color: #ef6534;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+::placeholder {
+  font-size: 15px;
+}
+
+.mensaje textarea {
+  background-color: #e9e9e9;
+  border: 2px solid #e9e5e5;
+  border-radius: 5px;
+  border: 1px groove rgb(148, 148, 148);
+  padding: 10px;
+  width: 270px;
+  margin-left: 36px;
+}
+
+.form-control {
+  text-align: center;
+  background-color: #e9e9e9;
+  border: 2px solid #a8a8a8;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1024px) {
   #app {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .logoSidebar {
-    margin-top: 30px;
-  }
-
-  .logoSidebar img {
-    border-radius: 20px;
-    width: 120px;
-    display: block;
-    margin: auto;
+  .avatares {
+    display: flex;
+    justify-content: space-around;
   }
 
   .sidebar {
-    /* background-color: rgb(238, 255, 255); */
-    background-color: #ddebf5;
-    /* background-image: linear-gradient(135deg, #ddebf5 0%, #010112 100%); */
-    background-color: #b3bbbf;
-    /* background-image: linear-gradient(135deg, #b3bbbf 0%, #010112 100%); */
-    background-color: #454748;
-    background-image: linear-gradient(135deg, #454748 0%, #888888 100%);
-    width: 30vw;
-    /* margin-top: 35px; */
-    margin-left: 50px;
-  }
-
-  #info-sidebar {
-    font-weight: 500;
-    color: rgb(252, 252, 252);
-    margin: 40px;
-    margin-top: 35px;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  .boton-contacto {
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .boton-contacto button {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    margin: 0;
+    width: 100vw;
   }
-
-  #info-sidebar span {
-    font-weight: bold;
-    color: #ef6534;
-  }
-
-  #form-sidebar {
-    display: none;
-  }
-
-  #form-sidebar {
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 10px;
-    /* width: 500px; */
-  }
-
   form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form textarea {
+    background-color: #e9e9e9;
+    border: 2px solid #a8a8a8;
+    margin-left: 10px;
+    height: 140px;
+    width: 200px;
+    border-radius: 40px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  #asunto {
+    margin-left: 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  #asunto {
-    margin-left: 27px;
+  .logoSidebar img {
+    margin: 50px;
+    width: 100px;
+  }
+  #info-sidebar span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ef6534;
   }
 
-  form input {
-    border-radius: 40px;
-    height: 40px;
+  .form-buttons {
+    margin-bottom: 20px;
+    margin-top: 2px;
+    margin-left: 47px;
   }
-
-
-
-  .mensaje textarea {
-    border-radius: 5px;
-    border: 1px solid rgb(197, 197, 197);
-    padding: 10px;
-    width: 270px;
-    margin-left: 36px;
-  }
-
-  @media screen and (max-width:1024px) {
-    #app {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .sidebar {
-      background-color: rgb(212, 252, 252);
-      font-weight: bold;
-      margin: 0;
-      width: 100vw;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    form textarea {
-      margin-left: 10px;
-      height: 140px;
-      width: 200px;
-      border-radius: 40px;
-      padding: 10px;
-      border-radius: 15px;
-    }
-
-    #asunto {
-      margin-left: 1px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .logoSidebar img {
-      margin: 50px;
-      width: 100px;
-    }
-
-    #info-sidebar span {
-      font-size: 18px;
-      font-weight: bold;
-      color: #ef6534;
-    }
-
-    .form-buttons {
-      margin-top: 2px;
-      margin-left: 47px;
-    }
-  }
+}

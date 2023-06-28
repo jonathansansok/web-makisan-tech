@@ -287,14 +287,24 @@
 
     <div class="sidebar">
       <div class="logoSidebar">
-        <img src="logo.jpeg" alt="" />
+        <!-- <img src="logo.jpeg" alt="" /> -->
       </div>
       <div id="info-sidebar">
-        <p>
-          Crear y desarrollar tecnologías necesarias tanto para la facilidad
-          de nuestros clientes como para la sociedad, a través de soluciones
-          innovadoras y eficientes.
-        </p>
+        <div class="personas-sidebar">
+          <div class="persona1">
+            <img src="assets/avatar.png" alt="" />
+            <p>
+            Maximiliano Bordon - Scrum Master & PM - Experiencia en gestion de
+            proyectos y liderazgo de equipos.
+          </p>
+        </div>
+        <div class="persona2">
+          <img src="assets/avatar.png" alt="" />
+          <p>
+            Gabriel Arias - Tecnico en Administracion Publica - Experiencia en Administración de personal y Recursos Humanos.
+          </p>
+        </div>
+      </div>
         <p>
           <span>Nuestra Vision:</span> Nuestra proyección es ser reconocidos
           como líderes locales en el desarrollo de software. Buscando ser una
@@ -302,7 +312,11 @@
           se dedique a ofrecer soluciones informáticas de la más alta calidad.
         </p>
         <div class="boton-contacto">
-          <button type="button" class="btn btn-outline-light font-weight-bold btn-lg mt-4" id="boton-contacto">
+          <button
+            type="button"
+            class="button-custom font-weight-bold btn-lg mt-4 text-white"
+            id="boton-contacto"
+          >
             Contacto Rapido c:
           </button>
         </div>
@@ -311,37 +325,81 @@
         <form>
           <div class="mb-3 row">
             <!-- <label for="staticEmail" class="col-sm-2 col-form-label"
-            >Email</label
-          > -->
+          >Email</label
+        > -->
             <div class="col-sm-10 mt-4">
-              <input type="text" class="form-control" id="staticEmail" placeholder="Nombre Completo"
-                style="width: 300px; margin-left: 40px; border-radius: 10px" />
+              <input
+                type="text"
+                class="form-control"
+                id="staticEmail"
+                placeholder="Nombre Completo"
+                style="
+                  width: 300px;
+                  margin-left: 40px;
+                  border-radius: 10px;
+                  margin-top: 12px;
+                "
+              />
             </div>
           </div>
           <div class="mb-3 row">
             <!-- <label for="inputPassword" class="col-sm-2 col-form-label"
-            >Password</label
-          > -->
-            <div class="col-sm-10 mt-2">
-              <input style="width: 300px; margin-left: 40px; border-radius: 10px" placeholder="Email" type="email"
-                class="form-control" id="inputPassword" />
+          >Password</label
+        > -->
+            <div class="">
+              <input
+                style="
+                  width: 300px;
+                  margin-left: 40px;
+                  border-radius: 10px;
+                  margin-top: 12px;
+                "
+                placeholder="Email"
+                type="email"
+                class="form-control"
+                id="inputPassword"
+              />
             </div>
           </div>
-          <div class="col-sm-10 mt-2" id="asunto">
-            <input type="text" class="form-control" id="staticEmail" placeholder="Asunto"
-              style="width: 300px; margin-left: 40px; border-radius: 10px" />
+          <div class="" id="asunto">
+            <input
+              type="text"
+              class="form-control"
+              id="staticEmail"
+              placeholder="Asunto"
+              style="
+                width: 300px;
+                margin-left: 40px;
+                border-radius: 10px;
+                margin-top: 12px;
+              "
+            />
           </div>
           <div class="mensaje">
             <label for="">
-              <textarea placeholder="..." name="" id="" cols="30" rows="6" class="mt-4"></textarea>
+              <textarea
+                placeholder="Mensaje.."
+                name=""
+                id=""
+                cols="30"
+                rows="6"
+                class="mt-4"
+              ></textarea>
             </label>
           </div>
         </form>
         <div class="form-buttons">
-          <button class="btn btn-primary mt-4 ml-3" style="margin-right: 20px; margin-bottom: 10px">
+          <button
+            class="btn mt-4 ml-3 text-white"
+            style="margin-right: 20px; margin-bottom: 10px; margin-top: 12px"
+          >
             Enviar
           </button>
-          <button class="btn btn-secondary mt-4" style="margin-bottom: 10px" id="boton-volver">
+          <button
+            class="btn text-white mt-4 ml-3"
+            style="margin-bottom: 10px"
+            id="boton-volver"
+          >
             Volver
           </button>
         </div>
