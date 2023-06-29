@@ -243,32 +243,29 @@
                               aria-label="Close"></button>
                           </div>
                           <div class="off-canvas-body textoYfoto">
-                            <div class="contenedor-resena">
-                              <div class="contenedor-resena resenas-container">
-                                <div id="formulario-container">
-                                  <form id="formulario">
-                                    <div class="form-group">
-                                      <label for="nombre">Nombre:</label>
-                                      <input type="text" class="form-control" id="nombre"
-                                        placeholder="Ingresa tu nombre">
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="profesion">Profesión:</label>
-                                      <input type="text" class="form-control" id="profesion"
-                                        placeholder="Ingresa tu profesión">
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="imagen">Imagen de perfil:</label>
-                                      <input type="file" class="form-control-file" id="imagen">
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="comentario">Comentario:</label>
-                                      <textarea class="form-control" id="comentario" rows="5"
-                                        placeholder="Ingresa tu comentario"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Enviar</button>
-                                  </form>
-                                </div>
+                            <div class="container-review reviews-container">
+                              <div id="form-container">
+                                <form id="form">
+                                  <div class="form-group">
+                                    <label for="nombre">Nombre:</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="profesion">Profesión:</label>
+                                    <input type="text" class="form-control" id="profesion"
+                                      placeholder="Ingresa tu profesión">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="imagen">Imagen de perfil:</label>
+                                    <input type="file" class="form-control-file" id="imagen">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="comentario">Comentario:</label>
+                                    <textarea class="form-control" id="comentario" rows="5"
+                                      placeholder="Ingresa tu comentario"></textarea>
+                                  </div>
+                                  <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
                               </div>
                             </div>
                           </div>
@@ -294,17 +291,18 @@
           <div class="persona1">
             <img src="assets/avatar.png" alt="" />
             <p>
-            Maximiliano Bordon - Scrum Master & PM - Experiencia en gestion de
-            proyectos y liderazgo de equipos.
-          </p>
+              Maximiliano Bordon - Scrum Master & PM - Experiencia en gestion de
+              proyectos y liderazgo de equipos.
+            </p>
+          </div>
+          <div class="persona2">
+            <img src="assets/avatar.png" alt="" />
+            <p>
+              Gabriel Arias - Tecnico en Administracion Publica - Experiencia en Administración de personal y Recursos
+              Humanos.
+            </p>
+          </div>
         </div>
-        <div class="persona2">
-          <img src="assets/avatar.png" alt="" />
-          <p>
-            Gabriel Arias - Tecnico en Administracion Publica - Experiencia en Administración de personal y Recursos Humanos.
-          </p>
-        </div>
-      </div>
         <p>
           <span>Nuestra Vision:</span> Nuestra proyección es ser reconocidos
           como líderes locales en el desarrollo de software. Buscando ser una
@@ -312,11 +310,7 @@
           se dedique a ofrecer soluciones informáticas de la más alta calidad.
         </p>
         <div class="boton-contacto">
-          <button
-            type="button"
-            class="button-custom font-weight-bold btn-lg mt-4 text-white"
-            id="boton-contacto"
-          >
+          <button type="button" class="button-custom font-weight-bold btn-lg mt-4 text-white" id="boton-contacto">
             Contacto Rapido c:
           </button>
         </div>
@@ -328,18 +322,12 @@
           >Email</label
         > -->
             <div class="col-sm-10 mt-4">
-              <input
-                type="text"
-                class="form-control"
-                id="staticEmail"
-                placeholder="Nombre Completo"
-                style="
+              <input type="text" class="form-control" id="staticEmail" placeholder="Nombre Completo" style="
                   width: 300px;
                   margin-left: 40px;
                   border-radius: 10px;
                   margin-top: 12px;
-                "
-              />
+                " />
             </div>
           </div>
           <div class="mb-3 row">
@@ -347,59 +335,33 @@
           >Password</label
         > -->
             <div class="">
-              <input
-                style="
+              <input style="
                   width: 300px;
                   margin-left: 40px;
                   border-radius: 10px;
                   margin-top: 12px;
-                "
-                placeholder="Email"
-                type="email"
-                class="form-control"
-                id="inputPassword"
-              />
+                " placeholder="Email" type="email" class="form-control" id="inputPassword" />
             </div>
           </div>
           <div class="" id="asunto">
-            <input
-              type="text"
-              class="form-control"
-              id="staticEmail"
-              placeholder="Asunto"
-              style="
+            <input type="text" class="form-control" id="staticEmail" placeholder="Asunto" style="
                 width: 300px;
                 margin-left: 40px;
                 border-radius: 10px;
                 margin-top: 12px;
-              "
-            />
+              " />
           </div>
           <div class="mensaje">
             <label for="">
-              <textarea
-                placeholder="Mensaje.."
-                name=""
-                id=""
-                cols="30"
-                rows="6"
-                class="mt-4"
-              ></textarea>
+              <textarea placeholder="Mensaje.." name="" id="" cols="30" rows="6" class="mt-4"></textarea>
             </label>
           </div>
         </form>
         <div class="form-buttons">
-          <button
-            class="btn mt-4 ml-3 text-white"
-            style="margin-right: 20px; margin-bottom: 10px; margin-top: 12px"
-          >
+          <button class="btn mt-4 ml-3 text-white" style="margin-right: 20px; margin-bottom: 10px; margin-top: 12px">
             Enviar
           </button>
-          <button
-            class="btn text-white mt-4 ml-3"
-            style="margin-bottom: 10px"
-            id="boton-volver"
-          >
+          <button class="btn text-white mt-4 ml-3" style="margin-bottom: 10px" id="boton-volver">
             Volver
           </button>
         </div>
@@ -519,30 +481,27 @@
     <div class="off-canvas-body textoYfoto">
       <div>
         <p class="texto-de-desplegable">
-        <div class="contenedor-resena">
-          <div class="contenedor-resena resenas-container">
-            <div id="formulario-container">
-              <form id="formulario">
-                <div class="form-group">
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
-                </div>
-                <div class="form-group">
-                  <label for="profesion">Profesión:</label>
-                  <input type="text" class="form-control" id="profesion" placeholder="Ingresa tu profesión">
-                </div>
-                <div class="form-group">
-                  <label for="imagen">Imagen de perfil:</label>
-                  <input type="file" class="form-control-file" id="imagen">
-                </div>
-                <div class="form-group">
-                  <label for="comentario">Comentario:</label>
-                  <textarea class="form-control" id="comentario" rows="5"
-                    placeholder="Ingresa tu comentario"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
-            </div>
+        <div class="container-review reviews-container">
+          <div id="form-container">
+            <form id="form">
+              <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+              </div>
+              <div class="form-group">
+                <label for="profesion">Profesión:</label>
+                <input type="text" class="form-control" id="profesion" placeholder="Ingresa tu profesión">
+              </div>
+              <div class="form-group">
+                <label for="imagen">Imagen de perfil:</label>
+                <input type="file" class="form-control-file" id="imagen">
+              </div>
+              <div class="form-group">
+                <label for="comentario">Comentario:</label>
+                <textarea class="form-control" id="comentario" rows="5" placeholder="Ingresa tu comentario"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
           </div>
         </div>
         </p>

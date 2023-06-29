@@ -130,7 +130,6 @@
     }
 }
 
-
 @media (max-width: 650px) {
     .description-text-container {
         font-size: 17px;
@@ -445,8 +444,9 @@ ul.cieloLista.show.escondo-header li a.btn-central.btn-solid::after {
 
 /* FORMULARIO RESEÑAS */
 
-#formulario-container {
-    max-width: 1000px;
+#form-container {
+    max-width: 1200px;
+    width: 100%;
     padding: 20px;
     background: linear-gradient(to left, #444444, #555555, #666666);
     font-size: 20px;
@@ -456,53 +456,58 @@ ul.cieloLista.show.escondo-header li a.btn-central.btn-solid::after {
     flex-direction: column;
 }
 
-#formulario {
+#form {
     font-size: 18px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 0;
 }
 
-#formulario label {
+#form label {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     margin-right: 10px;
-    text-align: left;
+    text-align: center;
     flex-basis: 50%;
     color: #ffffff;
 }
 
-#formulario .form-group {
+#form .form-group {
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: space-between;
     flex-basis: 50%;
+    margin-bottom: 10px;
 }
 
-#formulario .input-container {
+#form .input-container {
     flex: 1;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-#formulario input[type="text"],
-#formulario textarea {
+#form input[type="text"],
+#form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 15px;
     margin-bottom: 10px;
     text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 22px;
 }
 
-#formulario .form-control-file {
+#form .form-control-file {
     padding: 5px;
     margin-bottom: 0px;
     font-size: 12px;
 }
 
-#formulario .btn {
+#form .btn {
     border: 2px solid #696969;
     background-color: #333333;
     color: #ffffff;
@@ -511,55 +516,56 @@ ul.cieloLista.show.escondo-header li a.btn-central.btn-solid::after {
     border-radius: 25px;
 }
 
-#formulario .btn:hover {
+#form .btn:hover {
     background-color: #747474;
     border: 2px solid #333333;
 }
 
 @media (min-width: 651px) and (max-width: 1224px) {
 
-    #formulario label,
-    #formulario input,
-    #formulario textarea {
-        font-size: 16px;
+    #form label,
+    #form input,
+    #form textarea {
+        font-size: 18px;
         color: #ffffff;
     }
 
-    #formulario .form-group {
+    #form .form-group {
         flex-basis: 50%;
     }
 
-    #formulario .input-container {
+    #form .input-container {
         width: 100%;
     }
 }
 
 @media (max-width: 650px) {
-    #formulario {
+    #form {
         flex-direction: column;
     }
 
-    #formulario label {
+    #form label {
         flex-basis: 100%;
         margin-right: 0;
     }
 
-    #formulario .form-group {
+    #form .form-group {
+        display: block;
         flex-basis: 100%;
     }
 
-    #formulario .input-container {
+    #form .input-container {
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    #formulario-container {
+    #form-container {
         margin: 10px;
     }
 
-    #formulario label,
-    #formulario input,
-    #formulario textarea {
+    #form label,
+    #form input,
+    #form textarea {
         font-size: 16px;
         color: rgb(255, 255, 255);
         width: 100%;

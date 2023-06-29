@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* /////////////////////////////////////////////////////// */
 
-document.getElementById("formulario").addEventListener("submit", function (event) {
+document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
 
     var nombre = document.getElementById("nombre").value;
@@ -115,7 +115,7 @@ document.getElementById("formulario").addEventListener("submit", function (event
 
         document.getElementById("nombre").value = nombreTemporal;
         document.getElementById("profesion").value = profesionTemporal;
-        document.getElementById("comentario").value = comentarioTemporal;      
+        document.getElementById("comentario").value = comentarioTemporal;
         return;
     }
 
