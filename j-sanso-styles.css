@@ -24,7 +24,13 @@
 
 body {
   background-color: black;
-  /* overflow-x: hidden; */
+   overflow-y: hidden; 
+}
+
+@media (max-width: 1024px) {
+  body {
+     overflow-y: auto; 
+  }
 }
 
 #particles-js {
