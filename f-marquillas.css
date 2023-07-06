@@ -67,6 +67,17 @@
   font-weight: bold;
 }
 
+.text-black{
+  background-color: #ef6534;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.text-black:hover{
+  color: white;
+}
+
+
 .button-custom {
   border: none;
   border-radius: 5px;
