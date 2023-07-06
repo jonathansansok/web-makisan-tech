@@ -316,13 +316,13 @@
         </div>
       </div>
       <div id="form-sidebar">
-        <form>
+        <form action="https://formsubmit.co/makisantech@gmail.com" method="POST">
           <div class="mb-3 row">
             <!-- <label for="staticEmail" class="col-sm-2 col-form-label"
           >Email</label
         > -->
             <div class="col-sm-10 mt-4">
-              <input type="text" class="form-control" id="staticEmail" placeholder="Nombre Completo" style="
+              <input name="name" type="text" class="form-control" id="staticEmail" placeholder="Nombre Completo" style="
                   width: 300px;
                   margin-left: 40px;
                   border-radius: 10px;
@@ -340,11 +340,11 @@
                   margin-left: 40px;
                   border-radius: 10px;
                   margin-top: 12px;
-                " placeholder="Email" type="email" class="form-control" id="inputPassword" />
+                " placeholder="Email" name="email" type="email" class="form-control" id="inputPassword" />
             </div>
           </div>
           <div class="" id="asunto">
-            <input type="text" class="form-control" id="staticEmail" placeholder="Asunto" style="
+            <input name="name" type="text" class="form-control" id="staticEmail" placeholder="Asunto" style="
                 width: 300px;
                 margin-left: 40px;
                 border-radius: 10px;
@@ -353,18 +353,19 @@
           </div>
           <div class="mensaje">
             <label for="">
-              <textarea placeholder="Mensaje.." name="" id="" cols="30" rows="6" class="mt-4"></textarea>
+              <textarea name="texto" placeholder="Mensaje.." name="" id="" cols="30" rows="6" class="mt-4"></textarea>
             </label>
           </div>
+          <div class="form-buttons">
+            <button class="btn mt-4 ml-3 text-white" style="margin-right: 20px; margin-bottom: 10px; margin-top: 12px">
+              Enviar
+            </button>
+            <button class="btn text-white mt-4 ml-3" style="margin-bottom: 10px" id="boton-volver">
+              Volver
+            </button>
+          </div>
         </form>
-        <div class="form-buttons">
-          <button class="btn mt-4 ml-3 text-white" style="margin-right: 20px; margin-bottom: 10px; margin-top: 12px">
-            Enviar
-          </button>
-          <button class="btn text-white mt-4 ml-3" style="margin-bottom: 10px" id="boton-volver">
-            Volver
-          </button>
-        </div>
+
       </div>
     </div>
   </div>
