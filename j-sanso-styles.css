@@ -63,11 +63,18 @@ body {
 }
 
 .js-logoMakisan {
-  width: 40%;
-  height: 20%;
-  margin: 30px 0 0 30px;
+  width: 37%;
+  height: 17%;
+  margin: 32.3px 0 0 30px;
+  
 }
 
+@media (max-width: 1024px) {
+  .js-logoMakisan{
+    width: 55%;
+    height: 25%;
+  }
+}
 .cielo {
   display: flex;
   flex-direction: row;
