@@ -503,11 +503,15 @@ ul.cieloLista.show.escondo-header li a.btn-central.btn-solid::after {
 
 @media (min-width: 651px) and (max-width: 1224px) {
 
-    #form label,
+    #form label {
+        font-size: 18px;
+        color: #ffffff;
+    }
+
     #form input,
     #form textarea {
         font-size: 18px;
-        color: #ffffff;
+        color: #000;
     }
 
     #form .form-group {
@@ -527,6 +531,10 @@ ul.cieloLista.show.escondo-header li a.btn-central.btn-solid::after {
     #form label {
         flex-basis: 100%;
         margin-right: 0;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        white-space: pre-wrap;
     }
 
     #form .form-group {
@@ -543,11 +551,10 @@ ul.cieloLista.show.escondo-header li a.btn-central.btn-solid::after {
         margin: 10px;
     }
 
-    #form label,
     #form input,
     #form textarea {
         font-size: 16px;
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         width: 100%;
         white-space: pre-wrap;
     }
