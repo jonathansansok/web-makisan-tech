@@ -56,12 +56,13 @@
     padding: 0;
     border: 0;
     font: inherit;
-    position: relative;
     text-align: left;
     display: inline-block;
     overflow: hidden;
     vertical-align: top;
     transform: translateX(0);
+    position: absolute;
+    left: 50px;
 }
 
 .typed-letra {
@@ -113,31 +114,6 @@
 
 /* /////////////////////////////////////////////////////// */
 
-/* DESCRIPCION TEXTO CENTRAL */
-
-.description-text-container {
-    font-size: 24px;
-    color: white;
-    text-align: left;
-    margin-left: 50px;
-}
-
-@media (min-width:1225px) {}
-
-@media (min-width: 651px) and (max-width: 1224px) {
-    .description-text-container {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 650px) {
-    .description-text-container {
-        font-size: 17px;
-    }
-}
-
-/* /////////////////////////////////////////////////////// */
-
 /* BOTONES CENTRALES */
 
 .btn-central {
@@ -154,6 +130,7 @@
     transition-duration: 0.3s;
     margin: 10px 0;
     position: relative;
+    margin-top: 60px;
 }
 
 .btn-central:before {
