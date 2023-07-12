@@ -12,6 +12,16 @@
   margin-top: 40px;
 }
 
+.titulo-sidebar {
+  margin-top: 70px;
+}
+
+.titulo-sidebar h2 {
+  margin-left: 44px;
+  font-weight: bold;
+  font-family: 'Belanosima', sans-serif;
+}
+
 .persona1 img {
   display: block;
   margin: auto;
@@ -101,7 +111,7 @@
 }
 
 form {
-  margin-top: 150px;
+  margin-top: 34px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,5 +211,9 @@ form input {
     margin-bottom: 20px;
     margin-top: 2px;
     margin-left: 47px;
+  }
+
+  .titulo-sidebar h2 {
+    text-align: center;
   }
 }
